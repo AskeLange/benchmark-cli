@@ -1,3 +1,6 @@
-export default function (...args: number[]) {
-	console.log(args.reduce((a, b) => a + b, 0));
+function benchmark(args: any[]) {
+	console.log('Testing', args);
 }
+
+const { argv } = require('node:process');
+benchmark(argv);

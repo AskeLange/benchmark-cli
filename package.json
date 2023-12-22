@@ -1,22 +1,17 @@
 {
-	"name": "@askelange/__name__",
+	"name": "@askelange/benchmark-cli",
 	"version": "0.0.0",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.js"
-		}
+	"main": "./dist/index.js",
+	"bin": {
+		"benchmark": "./dist/index.js"
 	},
-	"main": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
 	"files": [
 		"dist"
 	],
 	"keywords": [],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/askelange/__name__.git"
+		"url": "https://github.com/askelange/benchmark-cli.git"
 	},
 	"scripts": {
 		"lint": "prettier --write --list-different . && eslint --ext \".ts,.vue\" . --fix",
